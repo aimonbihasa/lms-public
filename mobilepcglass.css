@@ -5,11 +5,5 @@ ion-header ion-toolbar, ion-header.header-md ion-toolbar {
     --border-color: var(--core-header-toolbar-border-color);
 }
 
-#ion-header ion-toolbar ion-back-button, header.header-md ion-toolbar ion-back-button {
-#    --background: var(--core-header-buttons-background);
-#    --ion-toolbar-color: var(--core-header-buttons-color);
-#    --border-radius: var(--mdl-shape-borderRadius-xl);
-#    --primary: var(--core-header-buttons-color);
-#}
 
 
