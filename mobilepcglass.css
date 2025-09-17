@@ -6,9 +6,10 @@ ion-header ion-toolbar, ion-header.header-md ion-toolbar {
 }
 
 ion-header ion-toolbar ion-back-button, header.header-md ion-toolbar ion-back-button {
-    --color: #ffffff !important;
+
     --background: var(--core-header-buttons-background);
     --ion-toolbar-color: var(--core-header-buttons-color);
     --border-radius: var(--mdl-shape-borderRadius-xl);
     --primary: var(--core-header-buttons-color);
 }
+
