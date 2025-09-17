@@ -1,0 +1,6 @@
+ion-header ion-toolbar, ion-header.header-md ion-toolbar {
+    --color: #ffffff !important;
+    --background: #DC2626 !important;
+    --border-width: 0 0 var(--core-header-toolbar-border-width) 0;
+    --border-color: var(--core-header-toolbar-border-color);
+}
