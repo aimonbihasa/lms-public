@@ -2,3 +2,7 @@
     --core-header-toolbar-background: linear-gradient(135deg, #FF7B7B 0%, #DC2626 40%, #7F1D1D 100%);
 }
 
+
+:root.dark {
+    --core-header-toolbar-background: linear-gradient(135deg, #FF7B7B 0%, #DC2626 40%, #7F1D1D 100%);
+}
