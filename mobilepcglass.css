@@ -1,8 +1,3 @@
-ion-header ion-toolbar, ion-header.header-md ion-toolbar {
-    --color: #ffffff !important;
-    --background: #DC2626 !important;
+:root {
+    --core-header-toolbar-background: red;
 }
-
-
-
-
