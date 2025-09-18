@@ -1,8 +1,414 @@
-:root {
-    --core-header-toolbar-background: linear-gradient(135deg, #FF7B7B 0%, #DC2626 40%, #7F1D1D 100%);
+/* 
+ * Moodle Mobile App CSS for mobilecssurl field
+ * Red & White Theme - Basic Customization
+ * 
+ * Instructions:
+ * 1. Save this as a .css file in your Moodle site (e.g., /theme/yourtheme/mobile.css)
+ * 2. Go to: Site Administration > Mobile app > Mobile appearance
+ * 3. In the "mobilecssurl" field, enter: https://yoursite.com/theme/yourtheme/mobile.css
+ * 4. Save changes
+ * 
+ * Note: These styles only apply AFTER users log into your site in the mobile app
+ */
+
+/* ===== HEADER CUSTOMIZATION (RED THEME) ===== */
+
+/* Main header background - Red */
+.core-header-toolbar {
+    background: #dc3545 !important;
+    color: white !important;
 }
 
+/* Header for different app versions */
+.bar-header {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border-bottom: none !important;
+}
 
-:root.dark {
-    --core-header-toolbar-background: linear-gradient(135deg, #FF7B7B 0%, #DC2626 40%, #7F1D1D 100%);
+/* Header title styling */
+.core-header-toolbar .core-header-toolbar-button,
+.bar-header .title {
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+/* Header buttons */
+.core-header-toolbar ion-button,
+.bar-header .button {
+    --color: white !important;
+    color: white !important;
+}
+
+/* ===== NAVIGATION AND MENU ===== */
+
+/* Side menu styling */
+.core-mainmenu-content {
+    background-color: #f8f9fa !important;
+}
+
+/* Menu items */
+.core-mainmenu-content ion-item {
+    --background: white !important;
+    --color: #333 !important;
+    border-left: 3px solid transparent !important;
+    margin-bottom: 2px !important;
+}
+
+/* Active menu item */
+.core-mainmenu-content ion-item.item-selected {
+    --background: #f8d7da !important;
+    --color: #dc3545 !important;
+    border-left: 3px solid #dc3545 !important;
+    font-weight: 600 !important;
+}
+
+/* Menu icons */
+.core-mainmenu-content ion-item ion-icon {
+    color: #dc3545 !important;
+}
+
+/* ===== BUTTONS ===== */
+
+/* Primary buttons - Red theme */
+ion-button[color="primary"],
+.button-positive {
+    --background: #dc3545 !important;
+    --color: white !important;
+    --border-color: #dc3545 !important;
+}
+
+/* Button hover/focus states */
+ion-button[color="primary"]:hover {
+    --background: #c82333 !important;
+}
+
+/* Floating action buttons */
+ion-fab-button {
+    --background: #dc3545 !important;
+    --color: white !important;
+}
+
+/* ===== CONTENT AREAS ===== */
+
+/* Page content background */
+ion-content {
+    --background: #ffffff !important;
+}
+
+/* Cards and content blocks */
+ion-card {
+    border-left: 4px solid #dc3545 !important;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Card headers */
+ion-card-header {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+}
+
+/* ===== LISTS AND ITEMS ===== */
+
+/* List items */
+ion-item {
+    --background: white !important;
+    --color: #333 !important;
+    border-bottom: 1px solid #f1f1f1 !important;
+}
+
+/* List item hover */
+ion-item:hover {
+    --background: #f8f9fa !important;
+}
+
+/* Item with red accent */
+ion-item.item-has-value {
+    border-left: 3px solid #dc3545 !important;
+}
+
+/* ===== COURSE CONTENT ===== */
+
+/* Course cards */
+.core-course-list-item {
+    border-left: 4px solid #dc3545 !important;
+    background: white !important;
+    margin: 8px !important;
+    border-radius: 8px !important;
+}
+
+/* Course progress indicators */
+.core-course-progress-bar {
+    background-color: #dc3545 !important;
+}
+
+/* Activity completion */
+.core-course-module-completion-icon.completion-complete {
+    color: #dc3545 !important;
+}
+
+/* ===== TABS ===== */
+
+/* Tab bar */
+ion-tab-bar {
+    --background: white !important;
+    border-top: 2px solid #dc3545 !important;
+}
+
+/* Tab buttons */
+ion-tab-button {
+    --color-selected: #dc3545 !important;
+    --color: #6c757d !important;
+}
+
+/* Active tab indicator */
+ion-tab-button.tab-selected {
+    --color: #dc3545 !important;
+}
+
+/* ===== FORMS AND INPUTS ===== */
+
+/* Input fields */
+ion-input {
+    --color: #333 !important;
+    --placeholder-color: #6c757d !important;
+}
+
+/* Input focus */
+ion-item.item-has-focus {
+    --border-color: #dc3545 !important;
+    --highlight-color-focused: #dc3545 !important;
+}
+
+/* Textareas */
+ion-textarea {
+    --color: #333 !important;
+    --placeholder-color: #6c757d !important;
+}
+
+/* ===== ALERTS AND NOTIFICATIONS ===== */
+
+/* Error alerts - Enhanced red theme */
+.alert-danger,
+ion-alert.alert-danger {
+    --background: #f8d7da !important;
+    --color: #721c24 !important;
+    border: 1px solid #dc3545 !important;
+}
+
+/* Success alerts */
+.alert-success {
+    --background: #d4edda !important;
+    --color: #155724 !important;
+    border: 1px solid #28a745 !important;
+}
+
+/* Info alerts with red accent */
+.alert-info {
+    --background: #f8f9fa !important;
+    --color: #721c24 !important;
+    border: 1px solid #dc3545 !important;
+}
+
+/* ===== LOADING INDICATORS ===== */
+
+/* Loading spinner - Red color */
+ion-spinner {
+    --color: #dc3545 !important;
+}
+
+/* Progress bars */
+ion-progress-bar {
+    --progress-background: #dc3545 !important;
+    --buffer-background: #f8d7da !important;
+}
+
+/* ===== SPECIFIC MOODLE COMPONENTS ===== */
+
+/* Forum discussions */
+.core-discussion-list ion-item {
+    border-left: 3px solid #f8d7da !important;
+}
+
+/* Messages */
+.core-messages-discussion-container {
+    background: white !important;
+}
+
+/* Calendar events */
+.core-calendar-event {
+    border-left: 4px solid #dc3545 !important;
+}
+
+/* Grades */
+.core-grades-table .grade-positive {
+    color: #dc3545 !important;
+    font-weight: 600 !important;
+}
+
+/* ===== SEARCH AND FILTERS ===== */
+
+/* Search bars */
+ion-searchbar {
+    --background: white !important;
+    --color: #333 !important;
+    --placeholder-color: #6c757d !important;
+    --icon-color: #dc3545 !important;
+}
+
+/* Filter buttons */
+.core-filter-button {
+    --background: #dc3545 !important;
+    --color: white !important;
+}
+
+/* ===== BADGES AND LABELS ===== */
+
+/* Badges with red theme */
+ion-badge {
+    --background: #dc3545 !important;
+    --color: white !important;
+}
+
+/* Label variants */
+.badge-light {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet specific adjustments */
+@media (min-width: 768px) {
+    .core-header-toolbar {
+        height: 60px !important;
+    }
+    
+    ion-card {
+        margin: 16px !important;
+    }
+    
+    .core-mainmenu-content ion-item {
+        padding: 16px !important;
+    }
+}
+
+/* ===== IONIC FRAMEWORK OVERRIDES ===== */
+
+/* Ionic color variables for red theme */
+:root {
+    --ion-color-primary: #dc3545;
+    --ion-color-primary-rgb: 220, 53, 69;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #c82333;
+    --ion-color-primary-tint: #e0515f;
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+/* Text colors */
+.text-red {
+    color: #dc3545 !important;
+}
+
+.text-light-red {
+    color: #721c24 !important;
+}
+
+/* Background colors */
+.bg-red {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+.bg-light-red {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+
+/* Dark theme adjustments */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ion-color-primary: #ff6b7a;
+        --ion-color-primary-rgb: 255, 107, 122;
+    }
+    
+    .core-header-toolbar {
+        background: #2d1b1c !important;
+    }
+    
+    ion-content {
+        --background: #1a1a1a !important;
+    }
+    
+    ion-card {
+        --background: #2d2d2d !important;
+        border-left: 4px solid #ff6b7a !important;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+    .core-header-toolbar {
+        background: #b71c1c !important;
+    }
+    
+    ion-button[color="primary"] {
+        --background: #b71c1c !important;
+        border: 2px solid white !important;
+    }
+    
+    .core-mainmenu-content ion-item.item-selected {
+        border-left: 5px solid #b71c1c !important;
+        --background: #ffebee !important;
+    }
+}
+
+/* Focus indicators for accessibility */
+ion-button:focus,
+ion-item:focus,
+ion-input:focus {
+    outline: 3px solid #dc3545 !important;
+    outline-offset: 2px !important;
+}
+
+/* ===== ANIMATION OVERRIDES ===== */
+
+/* Smooth transitions */
+ion-item,
+ion-card,
+ion-button {
+    transition: all 0.3s ease !important;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== PLATFORM SPECIFIC STYLES ===== */
+
+/* iOS specific */
+.ios .core-header-toolbar {
+    padding-top: env(safe-area-inset-top) !important;
+}
+
+/* Android specific */
+.android .core-header-toolbar {
+    height: 56px !important;
+}
+
+/* PWA specific */
+.pwa .core-header-toolbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
 }
