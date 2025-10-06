@@ -1,0 +1,4 @@
+/* Underline the page header title */
+ion-header ion-toolbar ion-title {
+    text-decoration: underline;
+}
