@@ -9,3 +9,21 @@ ion-header ion-toolbar ion-title {
     height: 40px;
     min-width: 100px;
 }
+
+/* Professional: Logo below existing with proper spacing */
+.core-login-site .core-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.core-login-site .core-logo-container::after {
+    content: '';
+    background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 140px;
+    height: 70px;
+    margin-top: 20px;
+}
