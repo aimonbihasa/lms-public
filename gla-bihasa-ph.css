@@ -3,7 +3,7 @@ ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: auto 30px; /* width: auto, height: 30px */
+    background-size: auto 50px; /* width: auto, height: 30px */
     background-repeat: no-repeat;
     background-position: left center; /* Changed from center to left center */
     height: 40px;
