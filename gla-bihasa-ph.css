@@ -1,14 +1,22 @@
-/* Set specific width and height */
+/* Increase header toolbar height to accommodate larger logo */
+ion-header ion-toolbar {
+    --min-height: 70px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+/* Adjust logo size to fit properly */
 ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: 150px 50px; /* width: 150px, height: 50px */
+    background-size: auto 45px; /* Reduced slightly to fit */
     background-repeat: no-repeat;
     background-position: left center;
-    height: 60px;
-    min-width: 150px;
+    height: 50px;
+    min-width: 100px;
 }
+
 /* Professional: Logo below existing with proper spacing */
 .core-login-site .core-logo-container {
     display: flex;
