@@ -27,3 +27,14 @@ ion-header ion-toolbar ion-title {
     height: 70px;
     margin-top: 20px;
 }
+
+/* Very specific - only category cards */
+.fc-categorycards .card.shadow[class*="fc-categorycard-"] {
+    box-shadow: 8px 8px 0px 0px #cc0000 !important;
+}
+
+/* Hover effect */
+.fc-categorycards .card.shadow[class*="fc-categorycard-"]:hover {
+    box-shadow: 10px 10px 0px 0px #cc0000 !important;
+    transform: translate(-1px, -1px);
+}
