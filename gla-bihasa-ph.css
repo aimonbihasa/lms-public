@@ -1,15 +1,14 @@
-/* Full control over logo size and position - LEFT ALIGNED */
+/* Set specific width and height */
 ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: auto 50px; /* width: auto, height: 30px */
+    background-size: 150px 50px; /* width: 150px, height: 50px */
     background-repeat: no-repeat;
-    background-position: left center; /* Changed from center to left center */
-    height: 40px;
-    min-width: 100px;
+    background-position: left center;
+    height: 60px;
+    min-width: 150px;
 }
-
 /* Professional: Logo below existing with proper spacing */
 .core-login-site .core-logo-container {
     display: flex;
