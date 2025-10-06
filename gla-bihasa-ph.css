@@ -1,15 +1,12 @@
-/* First logo */
 ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: contain;
+    background-size: auto 30px; /* width: auto, height: 30px */
     background-repeat: no-repeat;
-    background-position: left center;
-    height: 48px;
-    width: 200px;
-    margin-left: 8px;
-    position: relative;
+    background-position: left center; /* Changed from center to left center */
+    height: 30px;
+    min-width: 100px;
 }
 
 /* Second logo */
