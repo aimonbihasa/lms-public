@@ -3,9 +3,27 @@ ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: auto 30px; /* width: auto, height: 30px */
+    background-size: auto 50px; /* width: auto, height: 30px */
     background-repeat: no-repeat;
     background-position: left center; /* Changed from center to left center */
     height: 40px;
     min-width: 100px;
+}
+
+/* Professional: Logo below existing with proper spacing */
+.core-login-site .core-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.core-login-site .core-logo-container::after {
+    content: '';
+    background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 140px;
+    height: 70px;
+    margin-top: 20px;
 }
