@@ -1,4 +1,11 @@
-/* Underline the page header title */
+/* Full control over logo size and position - LEFT ALIGNED */
 ion-header ion-toolbar ion-title {
-    text-decoration: underline;
+    color: transparent;
+    font-size: 0;
+    background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
+    background-size: auto 30px; /* width: auto, height: 30px */
+    background-repeat: no-repeat;
+    background-position: left center; /* Changed from center to left center */
+    height: 40px;
+    min-width: 100px;
 }
