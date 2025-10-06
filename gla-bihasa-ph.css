@@ -46,8 +46,8 @@ ion-header ion-toolbar ion-title::before {
 /* Softer blurry red shadow */
 .fc-categorycards .card.shadow[class*="fc-categorycard-"] {
     box-shadow: 6px 6px 15px 2px rgba(255, 0, 0, 0.5) !important;
-    max-width: 330px !important;
-    min-width: 330px !important;
+    max-width: 275px !important;
+    min-width: 275px !important;
 }
 
 /* Hover effect */
