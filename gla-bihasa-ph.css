@@ -1,11 +1,22 @@
-/* Full control over logo size and position */
-ion-header ion-toolbar ion-title {
-    color: transparent;
-    font-size: 0;
+/* Target the exact element */
+ion-title core-format-text.core-logo-sitename {
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block !important;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: auto 30px; /* width: auto, height: 30px */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center left;
     height: 40px;
-    min-width: 100px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* Clean up the h1 container */
+ion-title h1 {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
