@@ -10,13 +10,14 @@ ion-header ion-toolbar ion-title {
 }
 
 /* Second logo - next to first logo */
-ion-header ion-toolbar ion-title::after {
+ion-header ion-toolbar ion-title::before {
     content: '';
     position: absolute;
     left: 10px; /* Adjust this for spacing between logos */
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('https://gla.bihasa.ph/pluginfile.php/1/core_admin/logocompact/300x300/1759716352/pc_med.png');
+    /*background-image: url('https://gla.bihasa.ph/pluginfile.php/1/core_admin/logocompact/300x300/1759716352/pc_med.png');*/
+    background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
