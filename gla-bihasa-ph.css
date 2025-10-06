@@ -1,30 +1,31 @@
-/* Full control over logo size and position - LEFT ALIGNED */
-/*
+/* First logo */
 ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: auto 30px; /* width: auto, height: 30px */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center; /* Changed from center to left center */
-    height: 30px;
-    min-width: 100px;
-}*/
-/* Two logos side by side */
-ion-header ion-toolbar ion-title {
-    color: transparent;
-    font-size: 0;
-    background-image: 
-        url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png'),
-        url('https://gla.bihasa.ph/pluginfile.php/1/core_admin/logocompact/300x300/1759716352/pc_med.png');
-    background-size: auto 40px, auto 40px; /* Size for each logo */
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, center center; /* Position each logo */
+    background-position: left center;
     height: 48px;
-    width: 200px; /* Increased width for both logos */
+    width: 200px;
     margin-left: 8px;
+    position: relative;
 }
 
+/* Second logo */
+ion-header ion-toolbar ion-title::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('https://gla.bihasa.ph/pluginfile.php/1/core_admin/logocompact/300x300/1759716352/pc_med.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
 /* Professional: Logo below existing with proper spacing */
 .core-login-site .core-logo-container {
     display: flex;
