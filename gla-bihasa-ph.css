@@ -28,13 +28,15 @@ ion-header ion-toolbar ion-title {
     margin-top: 20px;
 }
 
-/* Very specific - only category cards */
+/* Softer blurry red shadow */
 .fc-categorycards .card.shadow[class*="fc-categorycard-"] {
-    box-shadow: 8px 8px 0px 0px #cc0000 !important;
+    box-shadow: 6px 6px 15px 2px rgba(255, 0, 0, 0.5) !important;
+    max-width: 330px !important;
+    min-width: 330px !important;
 }
 
 /* Hover effect */
 .fc-categorycards .card.shadow[class*="fc-categorycard-"]:hover {
-    box-shadow: 10px 10px 0px 0px #cc0000 !important;
+    box-shadow: 6px 6px 15px 2px rgba(255, 0, 0, 0.5) !important;
     transform: translate(-1px, -1px);
 }
