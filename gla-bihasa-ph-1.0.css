@@ -1,0 +1,11 @@
+/* Full control over logo size and position */
+ion-header ion-toolbar ion-title {
+    color: transparent;
+    font-size: 0;
+    background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
+    background-size: auto 30px; /* width: auto, height: 30px */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    min-width: 100px;
+}
