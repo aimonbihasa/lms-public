@@ -1,4 +1,5 @@
 /* Full control over logo size and position - LEFT ALIGNED */
+/*
 ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
@@ -8,6 +9,20 @@ ion-header ion-toolbar ion-title {
     background-position: left center; /* Changed from center to left center */
     height: 30px;
     min-width: 100px;
+}*/
+/* Two logos side by side */
+ion-header ion-toolbar ion-title {
+    color: transparent;
+    font-size: 0;
+    background-image: 
+        url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png'),
+        url('https://gla.bihasa.ph/pluginfile.php/1/core_admin/logocompact/300x300/1759716352/pc_med.png');
+    background-size: auto 40px, auto 40px; /* Size for each logo */
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, center center; /* Position each logo */
+    height: 48px;
+    width: 200px; /* Increased width for both logos */
+    margin-left: 8px;
 }
 
 /* Professional: Logo below existing with proper spacing */
