@@ -9,20 +9,21 @@ ion-header ion-toolbar ion-title {
     min-width: 100px;
 }
 
-/* Second logo */
+/* Second logo - next to first logo */
 ion-header ion-toolbar ion-title::after {
     content: '';
     position: absolute;
-    right: 10px;
+    left: 10px; /* Adjust this for spacing between logos */
     top: 50%;
     transform: translateY(-50%);
     background-image: url('https://gla.bihasa.ph/pluginfile.php/1/core_admin/logocompact/300x300/1759716352/pc_med.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     width: 40px;
     height: 40px;
 }
+
 /* Professional: Logo below existing with proper spacing */
 .core-login-site .core-logo-container {
     display: flex;
