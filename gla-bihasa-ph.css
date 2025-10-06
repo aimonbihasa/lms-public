@@ -1,19 +1,12 @@
-/* Increase header toolbar height to accommodate larger logo */
-ion-header ion-toolbar {
-    --min-height: 70px;
-    --padding-top: 10px;
-    --padding-bottom: 10px;
-}
-
-/* Adjust logo size to fit properly */
+/* Full control over logo size and position - LEFT ALIGNED */
 ion-header ion-toolbar ion-title {
     color: transparent;
     font-size: 0;
     background-image: url('https://gla.bihasa.ph/theme/boost/pix/pcglass-logo.png');
-    background-size: auto 45px; /* Reduced slightly to fit */
+    background-size: auto 50px; /* width: auto, height: 30px */
     background-repeat: no-repeat;
-    background-position: left center;
-    height: 50px;
+    background-position: left center; /* Changed from center to left center */
+    height: 40px;
     min-width: 100px;
 }
 
@@ -33,4 +26,15 @@ ion-header ion-toolbar ion-title {
     width: 140px;
     height: 70px;
     margin-top: 20px;
+}
+
+/* Very specific - only category cards */
+.fc-categorycards .card.shadow[class*="fc-categorycard-"] {
+    box-shadow: 8px 8px 0px 0px #cc0000 !important;
+}
+
+/* Hover effect */
+.fc-categorycards .card.shadow[class*="fc-categorycard-"]:hover {
+    box-shadow: 10px 10px 0px 0px #cc0000 !important;
+    transform: translate(-1px, -1px);
 }
